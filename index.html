@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.min.css" />
+  </head>
+  <body>
+    <div class="dashboard">
+      <div class="openSidebar sidebar">
+        <div class="sidebar__logo">
+          <img src="./images/logo.svg" alt="" />
+          <h1>Dashboard</h1>
+        </div>
+        <div class="sidebar__items">
+          <a href="./overview.html" class="sidebar__products">
+            <img src="./images/productsImg.svg" alt="" />
+            <h3>Products</h3>
+          </a>
+          <a class="sidebar__products active">
+            <img src="./images/usersImg.svg" alt="" />
+            <h3>Users</h3>
+          </a>
+        </div>
+
+        <div class="sidebar__btns">
+          <a onClick="handleCloseAdmin" class="log__out">
+            <img src="./images/logOutImg.svg" alt="" />
+            Log out
+          </a>
+          <a class="log__out">
+            <img width="25" src="./images/homeImg.svg" alt="" />
+            <h3>Home</h3>
+          </a>
+        </div>
+      </div>
+      <div class="admin__main">
+        <div class="admin__header">
+          <img width="30" src="./images/hamburgerImg.svg" alt="" />
+          <div class="profile">
+            <h3>Jones Ferdinand</h3>
+            <img src="./images/manImg.svg" alt="" />
+          </div>
+        </div>
+        <div class="admin__body">
+          <div class="admin__body__intro">
+            <h1>Tickets</h1>
+            <div class="admin__body__intro__btns">
+              <button class="dotBtn">...</button>
+              <button class="button">Add</button>
+            </div>
+          </div>
+          <div class="admin__body__table">
+            <h2>All tickets</h2>
+            <table>
+              <thead>
+                <tr>
+                  <th>Owner</th>
+                  <th>Birth Date</th>
+                  <th>Email</th>
+                  <th>Gender</th>
+                  <th>Phone number</th>
+                </tr>
+              </thead>
+              <tbody class="tbody"></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.min.css" />
+  </head>
+  <body>
+    <div class="dashboard">
+      <div class="openSidebar sidebar">
+        <div class="sidebar__logo">
+          <img src="./images/logo.svg" alt="" />
+          <h1>Dashboard</h1>
+        </div>
+        <div class="sidebar__items">
+          <a href="#" class="sidebar__products active">
+            <img src="./images/productsImg.svg" alt="" />
+            <h3>Products</h3>
+          </a>
+          <a href="./index.html" class="sidebar__products">
+            <img src="./images/usersImg.svg" alt="" />
+            <h3>Users</h3>
+          </a>
+        </div>
+        <div class="sidebar__btns">
+          <a onClick="handleCloseAdmin" class="log__out">
+            <img src="./images/logOutImg.svg" alt="" />
+            Log out
+          </a>
+          <a class="log__out">
+            <img width="25" src="./images/homeImg.svg" alt="" />
+            <h3>Home</h3>
+          </a>
+        </div>
+      </div>
+      <div class="admin__main">
+        <div class="admin__header">
+          <img width="30" src="./images/hamburgerImg.svg" alt="" />
+          <div class="profile">
+            <h3>Jones Ferdinand</h3>
+            <img src="./images/manImg.svg" alt="" />
+          </div>
+        </div>
+        <div class="admin__body">
+          <div class="admin__body__intro">
+            <h1>Overview</h1>
+            <div class="admin__body__intro__btns">
+              <select name="" id="" class="dotBtn category__select">
+                <option value=""></option>
+              </select>
+              <select name="" id="" class="dotBtn sort__select">
+                <option value="">Sort by</option>
+                <option value="title-asc">Title Ascending</option>
+                <option value="title-desc">Title Descending</option>
+                <option value="price-asc">Price Ascending</option>
+                <option value="price-desc">Price Descending</option>
+              </select>
+              <button class="button">Add</button>
+            </div>
+          </div>
+          <div class="admin__body__table">
+            <table>
+              <thead>
+                <tr>
+                  <th>Brand</th>
+                  <th>Price</th>
+                  <th>Category</th>
+                  <th>Discount Percentage</th>
+                </tr>
+              </thead>
+              <tbody class="tbody__products"></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./products.js"></script>
+  </body>
+</html>
